@@ -66,7 +66,7 @@ export default function Home() {
         {allCars.length > 0 ? (
           <section>
             <div className="home__cars-wrapper">
-              {allCars?.map((car) => <CarCardComponent car={car} />)}
+              {allCars?.map((car) => <CarCardComponent key={car} car={car} />)}
             </div>
             {loading && (
               <div className="mt-16 w-full flex-center">
